@@ -23,6 +23,8 @@
         padding: 20px;
         border-radius: 3px;
         box-shadow: 5px 5px 2px 0 rgba(168, 70, 168, 1);
+        font-weight: bolder;
+        font-size: large;
     }
 
     div:hover {
@@ -31,6 +33,7 @@
 
     div.fizz {
         background-color: #9ed6ff;
+        color: #213547;
     }
 
     div.buzz {
