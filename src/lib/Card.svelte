@@ -1,16 +1,16 @@
 <script>
     export let number;
-    $: isMultipleOf2 = number % 2 === 0;
     $: isMultipleOf3 = number % 3 === 0;
+    $: isMultipleOf5 = number % 5 === 0;
 </script>
 
-<div class:fizz="{isMultipleOf2}"
-     class:buzz="{isMultipleOf3}">
+<div class:fizz="{isMultipleOf3}"
+     class:buzz="{isMultipleOf5}">
     <h1>{number}</h1>
-    {#if isMultipleOf2}
+    {#if isMultipleOf3}
         <span>Fizz</span>
     {/if}
-    {#if isMultipleOf3}
+    {#if isMultipleOf5}
         <span>Buzz</span>
     {/if}
 </div>
